@@ -11,7 +11,7 @@
   "license": "MIT",
   "icon": "icon.png",
   "engines": {
-    "vscode": "^1.68.0"
+    "vscode": "^1.90.0"
   },
   "categories": [
     "Programming Languages",
@@ -649,7 +649,7 @@
     "@types/mocha": "^10.0.7",
     "@types/node": "20.x",
     "@types/sinon": "^17.0.3",
-    "@types/vscode": "^1.68.0",
+    "@types/vscode": "^1.90.0",
     "@typescript-eslint/eslint-plugin": "^7.16.1",
     "@typescript-eslint/parser": "^7.16.1",
     "@vscode/test-electron": "^2.4.1",
