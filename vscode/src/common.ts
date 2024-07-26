@@ -26,6 +26,7 @@ export enum Command {
   RailsGenerate = "rubyLsp.railsGenerate",
   RailsDestroy = "rubyLsp.railsDestroy",
   NewMinitestFile = "rubyLsp.newMinitestFile",
+  ProfileFile = "rubyLsp.profileFile",
 }
 
 export interface RubyInterface {
