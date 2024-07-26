@@ -16,6 +16,7 @@ import { newMinitestFile, openFile, openUris } from "./commands";
 import { Debugger } from "./debugger";
 import { DependenciesTree } from "./dependenciesTree";
 import { Rails } from "./rails";
+import { ProfileTaskProvider } from "./profileTaskProvider";
 
 // The RubyLsp class represents an instance of the entire extension. This should only be instantiated once at the
 // activation event. One instance of this class controls all of the existing workspaces, telemetry and handles all
@@ -89,6 +90,10 @@ export class RubyLsp {
         }
       }),
       LOG_CHANNEL,
+      vscode.tasks.registerTaskProvider(
+        ProfileTaskProvider.TaskType,
+        new ProfileTaskProvider(this.currentActiveWorkspace.bind(this)),
+      ),
     );
   }
 

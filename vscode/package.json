@@ -26,6 +26,11 @@
   ],
   "main": "./out/extension.js",
   "contributes": {
+    "taskDefinitions": [
+      {
+        "type": "ruby_lsp_profile"
+      }
+    ],
     "menus": {
       "editor/context": [
         {
